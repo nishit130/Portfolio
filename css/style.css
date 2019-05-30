@@ -1,0 +1,78 @@
+html,body{
+    margin:0;
+    scroll-behavior: smooth;
+ 
+    
+}
+
+#content{
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    background-color: greenyellow;
+}
+#nav{
+    float: right;
+    padding-left: 50px;
+    margin-left: 88%;
+    font-family: Helvetica;
+    font-size: 20px;
+    
+}
+.nav-item{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 0px;
+    
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.nav-item:hover{
+    background-color: rgb(253, 253, 253);
+}
+.skill{
+    background-color: rgb(253, 234, 58);
+    margin-bottom: 12%;
+}
+.section1{
+     padding-bottom: 10%;
+}
+#about{
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin-bottom: 0;
+}
+.img1{
+    opacity:0.85;
+    margin-bottom: 0px;
+
+    object-fit: cover;
+    height:710px;
+
+}
+.section2{
+    background-color: lightcoral;
+}
+.foot{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+}
+.bg-img{
+    background-image: url("comp.jpg")
+}
+
+.card{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
