@@ -3,13 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width", initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--bootstrap files-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--CSS files-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--icon pack include-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--fonts-->
@@ -18,30 +17,42 @@
      <title>web Template</title>
 </head>
 <body >
-    <div class="fixed-top animated slideInDown">
-    <nav class="navbar navbar-expand-md navbar-light bg-transparent" id="nis">
-    <a class="navbar-brand logo" href="#"><span class="fa fa-user"></span> NISHIT PATEL</a>
-    <div class="navbar-nav">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navdata" aria-controls="navdata" aria-expanded="false" aria-label="Toggle navigation"  ><span class="fa fa-bars" style="font-size:30px;"></span></button>
-    <div class="collapse navbar-collapse" id="navdata">
-       <div id="nav">
-        <ul class="navbar-nav">
-            <li class="nav-item ml-5"><a  href="#about" style="text-decoration: none;">ABOUT</a></li>
-            <li class="nav-item ml-5"><a href="#skill" style="text-decoration: none;">SKILLS</a></li>
-            <li class="nav-item ml-5"><a  href="#" style="text-decoration: none;">CONTACT</a></li>
-
-
-
-        </ul>
-        </div>
-    </div>
-    </div>
+    <div class="animated slideInDown">
+    <nav class="navbar navbar-expand-lg bg-dark mr-0">
+    <a class="navbar-brand ml-3 logo mb-3 mt-3" href="#"><span class="fa fa-user"></span> NISHIT PATEL</a>
     </nav>
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navdata" aria-controls="navdata" aria-expanded="false" aria-label="Toggle navigation"  ><span class="fa fa-bars" style="font-size:30px;"></span></button> -->
+    <div class="collapse navbar-collapse show">      
+    </div>
+    <div id="navdata">
+      </div>
     </div>
     <div id ="content">
-        <img class="img1" src="img/comp.jpg" width="100%" alt="pic">   <div></div>
+      <div class="row mr-0">
+          <div class="col-md-10 pr-0">
+              <div>
+                  <div class="backi">
+                      <div class="img-text">
+                        <h1 id="demo"> </h1>
+                        <p style="font-size:2vmax">I am a Programer</p>
+                        <button class="btn-primary" onclick="window.location.href='resume.txt'">Resume</button>
+                       </div>
+                       </div>
+                    </div>
+            </div>
+        <div class="col-md-2 bg-dark mr-0">
+            <ul class="mt-5 navbar-nav">
+                <div>
+                  <li class="nav-item"><a  href="#about" style="text-decoration: none;">ABOUT</a></li>
+                  <li class="nav-item"><a href="#skill" style="text-decoration: none;">SKILLS</a></li>
+                  <li class="nav-item"><a  href="#" style="text-decoration: none;">CONTACT</a></li>
+                  <div>
+                  </ul>
+        </div>
+       </div>
+       </div>
       <div class="section2">
-          <div class="sticky-top">
+          <div>
         <h2 class="skill pt-3 pb-3" id="skill" style="text-align:center;">SKILLS</h2>
       </div>  
         <div class="section1"> 
@@ -77,8 +88,12 @@
 
 </div>
                     </div>
-    <h1 id="about">About Section</h1>
-    
+                    <div id="about">
+                      <h1 class="mb-0">About Section</h1>
+                      <div class="bg-dark"></div>
+                      </div>
+
+                    </div>
 
 
 
@@ -94,8 +109,6 @@
 
 
 
-
-</div>
 <script src="javascript.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
