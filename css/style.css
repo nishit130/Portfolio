@@ -22,13 +22,6 @@ html,body{
 .nav-item:hover{
     background-color: rgb(253, 253, 253);
 }
-.skill{
-    background-color: rgb(253, 234, 58);
-    margin-bottom: 12%;
-}
-.section1{
-     padding-bottom: 10%;
-}
 #about{
     
     margin-bottom: 0;
@@ -48,11 +41,12 @@ html,body{
     height:100%;
 
 }
-.section2{
-    background-color: lemonchiffon;
+.section1{
+    background-image: url("/img/skill-bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     position:relative;
+    min-height: 100vh;
 
 }
 .foot{
@@ -69,7 +63,7 @@ html,body{
     margin-bottom: 10px;
 }
 .backi{
-    background-image: url(../img/comp.jpg);
+    background-color:black;
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -77,22 +71,12 @@ html,body{
     min-height: 100vh;
 }
 .img-text{
-    text-align: center;
-    top: 45%;
-    right:40%;
-    position: absolute;
+    padding-top: 50vh;
+    padding-left: 15vw;
     color:white;
 }
 .navbar-brand:hover{
     background-color: rgb(253, 253, 253);
-}
-#l1{
-font-family: 'Roboto Slab', serif;
-font-size: 60px;
-}
-#l2{
-    font-family:'Coustard', serif;
-    font-size: 70px;
 }
 #avtar{
     border-radius: 50%;
@@ -101,4 +85,85 @@ font-size: 60px;
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+.fa{
+    color: white;
+}
+.handle{
+    font-size: 23px;
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .apse{
+        display: none;
+    }
+}
+.bt:hover{
+    background-color: #05386B;
+}
+.bt{
+    border: 2px solid #05386B;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+.skill-box{
+    width:80%;
+    height:60%;
+    margin-bottom: 80%;
+    margin-left: 10%;
+    border: 5px solid ;
+    color:white;;
+    font-family: 'Tillana', cursive;
+}
+/* {box-sizing:border-box}*/
+
+.container {
+  width: 100%;
+  background-color:transparent; 
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  color: white; 
+}
+
+.html {width: 90%; background-color :greenyellow;} /* Green */
+.css {width: 80%; background-color :greenyellow;} /* Blue */
+.js {width: 65%; background-color :greenyellow;} /* Red */
+.php {width: 60%; background-color :greenyellow;} /* Dark Grey */
+.avtar{
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+}
+.header{
+    background-color: #B522E2;
+    color: white;
+    font-size: 30px;
+}
+main{
+    color: white;
+    background-color: black;
+    padding-top: 80px;
+}
+.pro{
+    margin-left:30%;
+}
+caption{
+    font-size: 30px;
+}
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.type{ 
+	font: bold 4.5vw Consolas, Monaco, monospace;
+	border-right: .1em solid white;
+	width: 16.5em; 
+	width: 24ch;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 8.5s steps(24, end),blink-caret .5s step-end infinite alternate;
 }
