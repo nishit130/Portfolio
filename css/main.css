@@ -67,7 +67,7 @@ li{
         font-size: 5vh;
     }
     .header{
-        background: black url('../img/nav.svg') no-repeat top;
+        background: black url('webTemplates/img/nav.svg') no-repeat top;
         padding-bottom: 11%;
         background-size:113%;
     }
