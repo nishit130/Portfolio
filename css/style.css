@@ -25,7 +25,7 @@ html,body{
 #about{
     
     margin-bottom: 0;
-    background-image: url("../img/bg.jpg");
+    background-image: url("https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,7 +42,7 @@ html,body{
 
 }
 .section1{
-    background-image: url("/img/skill-bg.jpg");
+    background-image: url("https://images.pexels.com/photos/6356/hands-woman-laptop-working.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-attachment: fixed;
     background-size: cover;
     position:relative;
