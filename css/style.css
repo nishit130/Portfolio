@@ -41,14 +41,7 @@ html,body{
     height:100%;
 
 }
-.section1{
-    background-image: url("/img/skill-bg.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    position:relative;
-    min-height: 100vh;
 
-}
 .foot{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -63,11 +56,6 @@ html,body{
     margin-bottom: 10px;
 }
 .backi{
-    background-color:black;
-    position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     min-height: 100vh;
 }
 .img-text{
@@ -110,10 +98,9 @@ html,body{
 .skill-box{
     width:80%;
     height:60%;
-    margin-bottom: 80%;
+    margin-bottom: 40%;
     margin-left: 10%;
-    border: 5px solid ;
-    color:white;;
+    color:greenyellow;
     font-family: 'Tillana', cursive;
 }
 /* {box-sizing:border-box}*/
@@ -127,7 +114,7 @@ html,body{
   text-align: right; 
   padding-top: 10px;
   padding-bottom: 10px; 
-  color: white; 
+  color:black
 }
 
 .html {width: 90%; background-color :greenyellow;} /* Green */
@@ -162,8 +149,88 @@ caption{
 	font: bold 4.5vw Consolas, Monaco, monospace;
 	border-right: .1em solid white;
 	width: 16.5em; 
-	width: 24ch;
+	width: 25ch;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation: typing 8.5s steps(24, end),blink-caret .5s step-end infinite alternate;
+	-webkit-animation: typing 8.5s steps(25, end),blink-caret .5s step-end infinite alternate;
 }
+.dropdown-content{
+    display:none;
+}
+.dropdown:hover .hoverd{
+    display:none;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.sidenav {
+    height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .nav-btn{
+    margin-left: 93vw;
+  }
+  .hoverd{
+      display:;
+  }
+  .snav{
+      cursor: pointer;
+      margin-left: 95vw;
+      top:50vh;
+      position: fixed;
+  }
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 15vw;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid greenyellow;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    color: whitesmoke;
+  }

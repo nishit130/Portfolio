@@ -12,70 +12,150 @@
     <!--icon pack include-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--fonts-->
-    <script src="javascript.js"></script>
+    
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100|Coustard:900|Lato|Tillana:600&display=swap" rel="stylesheet">
     <title>web Template</title>
 </head>
 <body >
-    <div class="animated slideInDown">
-    <nav class="navbar mr-0" style="background-color: #5CDB95;">
+    <style>
+        body{
+          background-color:black;
+        }
+        .instructions {
+        position: absolute;
+        z-index:1;
+        top:50%;
+        left:10%;
+        color:#fff;
+        letter-spacing:2px;
+        pointer-events:none;
+    }
+    
+    canvas {
+        width:100%;
+    }
+          </style>
+          <div class="snav">
+            <h1><span class="fa fa-angle-left" style="cursor:pointer;text-decoration: none;" onclick="openNav()"></span></h1>
+          </div>
+          <div class="dropdown">
+            <span class="hoverd">
+    <span class="fa fa-angle-down" style="font-size: 80px;"></span>
+    </span>
+    <div class="animated slideInDown dropdown-content">
+    <nav class="navbar mr-0" style="background-color: #5CDB95;width: 100vw;">
     <a class="navbar-brand ml-3 logo mb-3 mt-3" href="#"><span class="fa fa-user"></span> NISHIT PATEL</a>
     <ul class="nav mx-auto">
-    <li class="nav-item mr-5"><b><a href="#about" style="text-decoration:none; color:purple;">ABOUT</a></b></li>
+    <li class="nav-item mr-5"><b><a href="#" style="text-decoration:none; color:purple;">ABOUT</a></b></li> 
     <li class="nav-item mr-5"><b><a href="#skill" style="text-decoration: none;color:purple;">SKILLS</a></b></li>
-    <li class="nav-item mr-5"><b><a  href="#" style="text-decoration: none;color:purple;">CONTACT</a></b></li>
+  <!--  <li class="nav-item mr-5"><b><a  href="#" style="text-decoration: none;color:purple;">CONTACT</a></b></li> -->
+    <li class="nav-item mr-5"><b><span style="cursor:pointer;text-decoration: none;color:purple;" onclick="openNav()">RESUME</span></b></li>
     </ul>
+
     </nav>
 
     </div>
-    <div id ="content">
-      <div class="row mr-0">
-          <div class="col-lg-10 pr-0">
-              <div class="img-cont">
+          </div>
+    
+    <div>
                   <div class="backi">
-                      <div class="img-text">
                         <div>
-                        <p class="type">Hello, I<span style="color: greenyellow;">'</span>M Nishit Patel<span style="color:greenyellow;">.</span></p>
+                          <canvas></canvas>
+                          <div class="instructions">
+                          <p class="type">Hello, I<span style="color: greenyellow;">'</span>M Nishit Patel<span style="color:greenyellow;">.</span></p>
+                          
+
                        </div>
                       </div>
-                       </div>
-                    </div>
-            </div>
-        <div class="apse text-white col-lg-2 mr-0" style="background-color:#5CDB95; ">
-          <img src="./img/myself.png" alt="avtar" id='avtar'>
-          <p style="text-align: center;"><b style="font-size: 30px;color: #05386B;">Nishit Patel</b><br>
-            B.Tech in Computer Engineering
-            <br><br><br>
-            nishit.bp@somaiya.edu <br>
-            45765876582 <br>
-            <br>
-            <button class="bt" onclick="window.location.href='resume.txt'">See full CV</button>
-            <br>
-            <div class="handle">
-           <a href="#"><span class="fa fa-facebook mr-3"></span></a>
-           <a href="#"><span class="fa fa-twitter mr-3"></span></a>
-           <a href="#"><span class="fa fa-linkedin mr-3"></span></a>
-           <a href="#"><span class="fa fa-instagram"></span></a>
-            </div>
-            </p>
-            <ul class="mt-5 navbar-nav">
-                <div>
-                  <li class="nav-item"><a  href="#about" style="text-decoration: none;color:purple;">ABOUT</a></li>
-                  <li class="nav-item"><a href="#skill" style="text-decoration: none;color:purple;">SKILLS</a></li>
-                  <li class="nav-item"><a  href="#" style="text-decoration: none;color:purple">CONTACT</a></li>
-                  <div>
-                  </ul>
+       </div>
+       <div id="mySidenav" class="sidenav" style="background-color:#5CDB95; ">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="text-white mr-0">
+              <div class="side-nav">
+                <img src="./img/myself.png" alt="avtar" id='avtar'>
+                <p style="text-align: center;"><b style="font-size: 30px;color: #05386B;">Nishit Patel</b><br>
+                  B.Tech in Computer Engineering
+                  <br><br><br>
+                  nishit.bp@somaiya.edu <br>
+                  87779846721 <br>
+                  <br>
+                  <button class="bt" onclick="window.location.href='resume.txt'">See full CV</button>
+                  <br>
+                  <div class="handle">
+                 <a href="https://www.facebook.com/nishit130"><span class="fa fa-facebook mr-3"></span></a>
+                 <a href="https://twitter.com/nishit130"><span class="fa fa-twitter mr-3"></span></a>
+                 <a href="https://www.linkedin.com/in/nishit-patel-45a8b0136/"><span class="fa fa-linkedin mr-3"></span></a>
+                 <a href="https://github.com/nis130"><span class="fa fa-github mr-3"></span></a>
+                </div>
+                  </p>
+                  <ul class="mt-5 navbar-nav">
+                      <div>
+                        <li class="nav-item"><a  href="#" style="text-decoration: none;color:purple;">ABOUT</a></li>
+                        <li class="nav-item"><a href="#skill" style="text-decoration: none;color:purple;">SKILLS</a></li>
+                        <li class="nav-item"><a  href="#" style="text-decoration: none;color:purple">CONTACT</a></li>
+                        <div>
+                        </ul>
+              </div>
+              </div>
+             </div>
         </div>
-       </div>
-       </div>
-        <div class="section1" id="skill"> 
-         <div class="row">
+          
+         <div class="row" id="skill">
           <div class="col-sm-6">
-                
+              <div class="container ml-5">
+              <h3 style="color:greenyellow;align-content: center;font-family: 'Tillana', cursive;" class="">Knowledge of Frameworks and Libraries</h3>
+                <div class="row">
+                  <div class="row">
+                          <div class="col-lg-6 mt-4">
+                              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                 data-target="#image-gallery">
+                                  <img style="width:100%;"
+                                       src="./img/Gatsby.png"
+                                       alt="gatsby">
+                              </a>
+                          </div>
+                          <div class="col-lg-6 mt-4">
+                              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                 data-target="#image-gallery">
+                                  <img
+                                      style="width: 100%;"
+                                       src="./img/bootstrap.jpg"
+                                       alt="bootstrap">
+                              </a>
+                          </div>
+              
+                          <div class="col-lg-6 mt-4">
+                              <a class="mt-2" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                 data-target="#image-gallery">
+                                  <img
+                                  style="width:100%;"
+                                       src="./img/react.jpg"
+                                       alt="react">
+                              </a>
+                          </div>
+<!--                          <div class="col-lg-6 col-md-5 col-xs-3">
+                              <a class="" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                                 data-target="#image-gallery">
+                                  <img
+                                       src="./img/bs4.jpg"
+                                       alt="Another alt text">
+                              </a>
+                          </div>
+                         
+                        -->          
+              
+              
+                          
+                  </div>  
+                          
+                      </div>
+                </div>
+              
+              
           </div>
           <div class="col-sm-6">
-            <div class="skill-box mt-5">
+            <div class="skill-box">
               <h3 style="text-align: center;">skills</h3>
               <p>HTML</p>
 <div class="container">
@@ -100,21 +180,10 @@
           </div>
         </div>
     </div>
-                    </div>
-                    <div id="about">
-                      <h1 class="mb-0">About Section</h1>
-                      <div class="bg-dark"></div>
-                      </div>
+  </div>
 
                     </div>
-
-
-
-
-
-
-
-
+                    <script src="javascript.js"></script>
 
 
 
