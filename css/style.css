@@ -25,7 +25,7 @@ html,body{
 #about{
     
     margin-bottom: 0;
-    background-image: url("https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-image: url("../img/bg.jpg");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,15 +41,6 @@ html,body{
     height:100%;
 
 }
-<<<<<<< HEAD
-=======
-.section1{
-    background-image: url("https://images.pexels.com/photos/6356/hands-woman-laptop-working.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    background-attachment: fixed;
-    background-size: cover;
-    position:relative;
-    min-height: 100vh;
->>>>>>> 1ba476586d8ca142b8739704bca5f8e39ef2f0fa
 
 .foot{
     padding-top: 10px;
@@ -161,7 +152,6 @@ caption{
 	width: 25ch;
 	white-space: nowrap;
 	overflow: hidden;
-<<<<<<< HEAD
 	-webkit-animation: typing 8.5s steps(25, end),blink-caret .5s step-end infinite alternate;
 }
 .dropdown-content{
@@ -244,7 +234,3 @@ caption{
     text-align: center;
     color: whitesmoke;
   }
-=======
-	-webkit-animation: typing 8.5s steps(24, end),blink-caret .5s step-end infinite alternate;
-}
->>>>>>> 1ba476586d8ca142b8739704bca5f8e39ef2f0fa
