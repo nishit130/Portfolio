@@ -146,13 +146,12 @@ caption{
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 .type{ 
-	font: bold 4.5vw Consolas, Monaco, monospace;
+	font: bold 5vw Consolas, Monaco, monospace;
 	border-right: .1em solid white;
-	width: 16.5em; 
 	width: 25ch;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation: typing 8.5s steps(25, end),blink-caret .5s step-end infinite alternate;
+    -webkit-animation: typing 8.5s steps(25, end),blink-caret .5s step-end infinite alternate;
 }
 .dropdown-content{
     display:none;
@@ -233,4 +232,34 @@ caption{
     padding: 15px;
     text-align: center;
     color: whitesmoke;
+  }
+  .mobile-home{
+      display:none;
+  }
+  @media screen and (max-width: 600px) {
+    .mobile-typing {
+      visibility: hidden;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+      display: none;
+    }
+    .mobile-home{
+        display:block;
+        margin-left: 0;
+        margin-right: 10px;
+        font: bold 14vw Consolas, Monaco, monospace;
+    }
+    .dropdown-content{
+        display:block;
+    }
+    .fa-angle-down::before{
+        display:none;
+        visibility: hidden;
+    }
+    .hoverd{
+        display:none;
+    }
+
   }
