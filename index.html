@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--CSS files-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">  
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--icon pack include-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--fonts-->
@@ -17,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100|Coustard:900|Lato|Tillana:600&display=swap" rel="stylesheet">
     <title>web Template</title>
 </head>
-<body >
+<body>
     <style>
         body{
           background-color:black;
@@ -36,21 +38,22 @@
         width:100%;
     }
           </style>
+          <section class="home">
           <div class="snav">
-            <h1><span class="fa fa-angle-left" style="cursor:pointer;text-decoration: none;" onclick="openNav()"></span></h1>
+            <h1><span id="theme" class="fa fa-angle-left" style="cursor:pointer;text-decoration: none;" onclick="openNav()"></span></h1>
           </div>
           <div class="dropdown">
             <span class="hoverd">
-    <span class="fa fa-angle-down" style="font-size: 80px;"></span>
+    <span id="theme" class="fa fa-angle-down" style="font-size: 80px;"></span>
     </span>
     <div class="animated slideInDown dropdown-content">
-    <nav class="navbar mr-0" style="background-color: #5CDB95;width: 100vw;">
+    <nav class="navbar mr-0" style="background-color: #10a98d;width: 100vw;">
     <a class="navbar-brand ml-3 logo mb-3 mt-3" href="#"><span class="fa fa-user"></span> NISHIT PATEL</a>
     <ul class="nav mx-auto">
-    <li class="nav-item mr-5"><b><a href="#" style="text-decoration:none; color:purple;">ABOUT</a></b></li> 
-    <li class="nav-item mr-5"><b><a href="#skill" style="text-decoration: none;color:purple;">SKILLS</a></b></li>
-  <!--  <li class="nav-item mr-5"><b><a  href="#" style="text-decoration: none;color:purple;">CONTACT</a></b></li> -->
-    <li class="nav-item mr-5"><b><span style="cursor:pointer;text-decoration: none;color:purple;" onclick="openNav()">RESUME</span></b></li>
+    <li class="nav-item mr-5"><b><a href="#" style="text-decoration:none; color:black;">ABOUT</a></b></li> 
+    <li class="nav-item mr-5"><b><a href="#skill" style="text-decoration: none;color:black;">SKILLS</a></b></li>
+   <li class="nav-item mr-5"><button  onclick="night()">lights</button></li>
+    <li class="nav-item mr-5"><b><span style="cursor:pointer;text-decoration: none;color:black;" onclick="openNav()">RESUME</span></b></li>
     </ul>
 
     </nav>
@@ -63,15 +66,16 @@
                         <div>
                           <canvas></canvas>
                           <div class="instructions">
-                          <p class="type mobile-typing">Hello, I<span style="color: greenyellow;">'</span>M Nishit Patel<span style="color:greenyellow;">.</span></p>
-                          <p class="mobile-home">Hello,I<span style="color: greenyellow;">'</span>M Nishit Patel<span style="color:greenyellow;">.</span></p>
+                          <p class="type mobile-typing" id="theme">Hello, I<span style="color: #10a98d;">'</span>M Nishit Patel<span style="color:#10a98d;">.</span></p>
+                          <p class="mobile-home" id="theme">Hello,I<span style="color: #10a98d;">'</span>M Nishit Patel<span style="color:#10a98d;">.</span></p>
 
                        </div>
                       </div>
+                      
        </div>
-       <div id="mySidenav" class="sidenav" style="background-color:#5CDB95; ">
+       <div id="mySidenav" class="sidenav" style="background-color:#10a98d; ">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="text-white mr-0">
+          <div class="mr-0">
               <div class="side-nav">
                 <img src="./img/myself.png" alt="avtar" id='avtar'>
                 <p style="text-align: center;"><b style="font-size: 30px;color: #05386B;">Nishit Patel</b><br>
@@ -83,30 +87,59 @@
                   <button class="bt" onclick="window.location.href='Nishit_CV_2-09-2019.pdf'">See full CV</button>
                   <br>
                   <div class="handle">
-                 <a href="https://www.facebook.com/nishit130"><span class="fa fa-facebook mr-3"></span></a>
-                 <a href="https://twitter.com/nishit130"><span class="fa fa-twitter mr-3"></span></a>
-                 <a href="https://www.linkedin.com/in/nishit-patel-45a8b0136/"><span class="fa fa-linkedin mr-3"></span></a>
-                 <a href="https://github.com/nis130"><span class="fa fa-github mr-3"></span></a>
+                 <a style="color: black;" href="https://www.facebook.com/nishit130"><span class="fa fa-facebook mr-3"></span></a>
+                 <a style="color: black;" href="https://twitter.com/nishit130"><span class="fa fa-twitter mr-3"></span></a>
+                 <a style="color: black;" href="https://www.linkedin.com/in/nishit-patel-45a8b0136/"><span class="fa fa-linkedin mr-3"></span></a>
+                 <a style="color: black;" href="https://github.com/nis130"><span class="fa fa-github mr-3"></span></a>
                 </div>
                   </p>
                   <ul class="mt-5 navbar-nav">
                       <div>
-                        <li class="nav-item"><a  href="#" style="text-decoration: none;color:purple;">ABOUT</a></li>
-                        <li class="nav-item"><a href="#skill" style="text-decoration: none;color:purple;">SKILLS</a></li>
-                        <li class="nav-item"><a  href="#" style="text-decoration: none;color:purple">CONTACT</a></li>
+                        <li class="nav-item"><a  href="#" style="text-decoration: none;color:black;">ABOUT</a></li>
+                        <li class="nav-item"><a href="#skill" style="text-decoration: none;color:black;">SKILLS</a></li>
+                        <li class="nav-item"><a  href="#" style="text-decoration: none;color:black">CONTACT</a></li>
                         <div>
                         </ul>
               </div>
               </div>
              </div>
         </div>
-          
+        <!-- <div class="circle-reveal-intro full-height">
+          <div class="fixed-wrapper">
+            <div class="circle-reveal-wrapper header light">
+              <div class="circle-background white"></div>
+              <div class="header-wrapper row valign-wrapper">
+                <div class="col s12 m8 offset-m2">
+                  <h1>FIRST!</h1>
+                  <span class="tagline">Show off your business in a whole new way.</span>
+                  <button class="read-more"><i class="icon-caret-down"></i></button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="circle-reveal-wrapper header">
+              <div class="circle-background pink"></div>
+              <div class="header-wrapper row valign-wrapper">
+                <div class="col s12 m8 offset-m2">
+                  <h1>SECOND!</h1>
+                  <span class="tagline">Show off your business in a whole new way.</span>
+                  <button class="read-more"><i class="icon-caret-down"></i></button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          </section>
+          <section class="iskill">
+              <!-- <video autoplay muted loop id="myVideo">
+                  <source src="http://video.wixstatic.com/video/11062b_6a134fc09ea34833a17d295e295ab517/1080p/mp4/file.mp4" type="video/mp4">
+                </video> -->
+                <!-- <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous" id="SITE_BACKGROUNDcurrentVideovideo" class="bgVideovideo" width="100vw" height="100vh" autoplay="true" src="http://video.wixstatic.com/video/11062b_6a134fc09ea34833a17d295e295ab517/1080p/mp4/file.mp4" style="position:absolute; opacity: 1; width: 100vw; height: 100vh; top: 100vh;"></video> -->
          <div class="row ml-0 mr-0 row-no-gutters" id="skill">
           <div class="col-sm-6">
               <div class="container">
-              <h3 style="color:greenyellow;align-content: center;font-family: 'Tillana', cursive;">Knowledge of Frameworks and Libraries</h3>
+              <h3 class="mt-4 pt-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-offset="500" style="color:white;align-content: center;font-family: 'Tillana', cursive;">Knowledge of Frameworks and Libraries</h3>
                 <div class="row ml-0 mr-0">
-                  <div class="row ml-0 mr-0">
+                  <div class="row ml-0 mr-0" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-offset="500">
                           <div class="col-lg-6 mt-4">
                               <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                                  data-target="#image-gallery">
@@ -152,11 +185,11 @@
                       </div>
                 </div>
               
-              
+
           </div>
           <div class="col-sm-6">
-            <div class="skill-box">
-              <h3 style="text-align: center;">skills</h3>
+            <div class="skill-box"  data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-offset="500">
+              <h3 class="mt-4 pt-4" style="text-align: center;">skills</h3>
               <p>HTML</p>
 <div class="container">
   <div class="skills html">90%</div>
@@ -183,19 +216,30 @@
   </div>
 
                     </div>
+                    </section>
                     <script src="javascript.js"></script>
 
 
 
 
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
-
+<script type="text/javascript" src="materialize.min.js"></script>
 <script src="javascript.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-<footer><p class="foot"> made with &hearts; by Nishit Patel</p></footer>
+<footer><p class="foot"> made with &hearts; by Nishit Patel</p>
+<p id="card-panel teal lighten-2">color 1</p>
+<p id="color-2">color 2</p>
+<p id="color-3">color 3</p>
+<p id="color-4">color 4</p>
+
+</footer>
 <!-- <button class="btn-primary" onclick="window.location.href='resume.txt'">Resume</button>-->
 </html>

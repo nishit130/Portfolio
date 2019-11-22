@@ -1,10 +1,11 @@
-html,body{
+/* html,body{
     margin:0;
     scroll-behavior: smooth;
+    scroll-snap-type:y mandatory;
     height:100%;
  
     
-}
+} */
 
 #content{
     font-size: 20px;
@@ -57,6 +58,7 @@ html,body{
 }
 .backi{
     min-height: 100vh;
+    scroll-snap-align: start;
 }
 .img-text{
     padding-top: 50vh;
@@ -100,7 +102,7 @@ html,body{
     height:60%;
     margin-bottom: 40%;
     margin-left: 10%;
-    color:greenyellow;
+    color:white;
     font-family: 'Tillana', cursive;
 }
 /* {box-sizing:border-box}*/
@@ -114,26 +116,26 @@ html,body{
   text-align: right; 
   padding-top: 10px;
   padding-bottom: 10px; 
-  color:black
+  /* color:black  */
 }
 
-.html {width: 90%; background-color :greenyellow;} /* Green */
-.css {width: 80%; background-color :greenyellow;} /* Blue */
-.js {width: 65%; background-color :greenyellow;} /* Red */
-.php {width: 60%; background-color :greenyellow;} /* Dark Grey */
+.html {width: 90%; background-color :#42c4ac;} /* Green */
+.css {width: 80%; background-color :#42c4ac;} /* Blue */
+.js {width: 65%; background-color :#42c4ac;} /* Red */
+.php {width: 60%; background-color :#42c4ac;} /* Dark Grey */
 .avtar{
     border-radius: 50%;
     width: 60%;
     height: 60%;
 }
-.header{
+/* .header{
     background-color: #B522E2;
     color: white;
     font-size: 30px;
-}
+} */
 main{
     color: white;
-    background-color: black;
+    /* background-color: black; */
     padding-top: 80px;
 }
 .pro{
@@ -151,7 +153,7 @@ caption{
 	width: 25ch;
 	white-space: nowrap;
 	overflow: hidden;
-    -webkit-animation: typing 8.5s steps(25, end),blink-caret .5s step-end infinite alternate;
+    -webkit-animation: typing 8.5s steps(23, end),blink-caret .5s step-end infinite alternate;
 }
 .dropdown-content{
     display:none;
@@ -163,10 +165,10 @@ caption{
     display:block;
 }
 .sidenav {
-    height: 100%;
+  height: 100%;
   width: 0;
-  position: fixed;
   z-index: 1;
+  position:absolute;
   top: 0;
   right: 0;
   background-color: #111;
@@ -179,7 +181,6 @@ caption{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
     display: block;
     transition: 0.3s;
   }
@@ -195,16 +196,8 @@ caption{
     font-size: 36px;
     margin-left: 50px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
   .nav-btn{
     margin-left: 93vw;
-  }
-  .hoverd{
-      display:;
   }
   .snav{
       cursor: pointer;
@@ -236,7 +229,7 @@ caption{
   .mobile-home{
       display:none;
   }
-  @media screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     .mobile-typing {
       visibility: hidden;
       clear: both;
@@ -262,4 +255,55 @@ caption{
         display:none;
     }
 
+
   }
+section{
+    scroll-snap-align: start;
+}
+.home{
+    background-color:black;
+}
+/* #myVideo {
+    position: relative;
+    min-width: 1285px;
+    min-height: 723px;
+    left: -150px;
+    opacity: 1;
+  } */
+.iskill{
+    width: 100%;
+    height: 100%;
+}
+.db-content{
+    display: none;
+}
+.dbdown:hover .db-content{
+    display: block;
+}
+.dbdown:hover .nav-dp{
+    display: none;
+}
+.avar-img{
+    border-radius: 50%;
+}
+@media only screen and (max-width: 600px){
+    .avar-img{
+        width: 45vw;
+        height: 30vh;
+        margin-bottom: 10%;
+    }
+    .type{
+        display: none;
+    }
+    .sidenav{
+        position:relative;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+.shadow{
+    text-shadow: 2px 2px 3px rgb(40, 4, 247), 2px 2px 5px rgb(226, 125, 10);
+}
+  

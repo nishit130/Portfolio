@@ -1,11 +1,26 @@
 function openNav() {
 	document.getElementById("mySidenav").style.width = "250px";
+	document.getElementById("navigation").style.display="none";
   }
   
   /* Set the width of the side navigation to 0 */
   function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("navigation").style.display="block";
   }
+function night()
+{
+	document.querySelector('body').style.backgroundColor = "white";
+	document.querySelector('section').style.backgroundColor = "white";
+	// document.getElementById('theme').style.color= "black";
+	document.querySelectorAll('theme').forEach(forfun(this));
+
+}
+function forfun(item)
+{
+	console.log(item);
+	
+}
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
